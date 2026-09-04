@@ -53,7 +53,7 @@ jobs:
               run: |
                 echo "Updating inference script with S3 model path"
                 model_url="s3://${{ env.S3_BUCKET }}/${{ env.MODEL_NAME }}"
-                sed -i "s|storageurl = .*|storageurl = '${model_url}'|" k8s/inference.py
+                sed -i "s|storageurl = .*|storageurl = '${model_url}'|" k8s/inference.yaml
 
             - name: commit updated inference script
               run: |
