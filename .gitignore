@@ -13,6 +13,7 @@ mlruns/
 models/
 *.pkl
 *.joblib
+.dvc
 
 # Large datasets
 *.csv
