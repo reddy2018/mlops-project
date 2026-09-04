@@ -32,7 +32,7 @@ jobs:
                 pip install -r requirements.txt
 
             - name: generate dataset
-              run: python generate_dataset.py
+              run: python generate_data.py
 
             - name: train model
               run: python train_model.py
